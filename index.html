@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Firebase Login</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div id="login_div" class="main-div">
+        <img src="/JOBSCRAPER.png" alt="JobScraper logo" width="250px" />
+        <!-- <h3>Welcome to JobScraper</h3> -->
+        <p>
+          Finding your desired job for you has been made so simple, Just Search
+          !
+        </p>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+        <button onclick="login()">Login to Account</button>
+        <!-- <button onclick="signUp()">Sign up to Account</button> -->
+      </div>
+    </div>
+
+    <div id="user_div" class="loggedin-div" style="text-align: center">
+      <h3 id="user_para">Welcome User</h3>
+      <img src="/JOBSCRAPER.png" alt="JobScraper logo" width="200px" />
+
+      <p>Oops! Site is under construction</p>
+      <h3 style="text-align: center">
+        Get notify, We will good to Goo!
+        <small>Subscribe to our newsletter</small>
+      </h3>
+
+      <div class="newsletter_box">
+        <input
+          placeholder="Email..."
+          type="email"
+          name="email"
+          id="email"
+          class="newsletter"
+        />
+        <a class="subs" href="mailto:mail@harshmistry.me">subscribe</a>
+      </div>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyDAd5I57tai-Ib3gTCYqzq-VXJne7gyGdQ",
+        authDomain: "jobscraper-aee1c.firebaseapp.com",
+        projectId: "jobscraper-aee1c",
+        storageBucket: "jobscraper-aee1c.appspot.com",
+        messagingSenderId: "264993904849",
+        appId: "1:264993904849:web:7e7dfb205648eff1dc4df0",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
