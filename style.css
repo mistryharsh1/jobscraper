@@ -94,3 +94,17 @@ button {
   background-color: #5d8ffc;
   color: #fff;
 }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
